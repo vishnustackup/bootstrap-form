@@ -1,0 +1,17 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+  }
+  .footer_section {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 396px) {
+  .templates {
+    flex-direction: column !important;
+  }
+}
