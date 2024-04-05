@@ -7,11 +7,17 @@
     width: 100%;
   }
   .footer_section {
-    justify-content: center;
+    flex-direction: row-reverse !important;
+  }
+  .container {
+    padding: 2px !important ;
   }
 }
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 594px) {
   .templates {
     flex-direction: column !important;
+  }
+  .colorinput {
+    flex-direction: row !important;
   }
 }

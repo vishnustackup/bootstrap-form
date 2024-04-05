@@ -26,23 +26,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>form</title>
   </head>
   <body>
     <section class="layout">
       <div class="container d-flex gap-3">
-        <div class="card p-5 mb-4 mt-4">
+        <div class="card p-4 mb-4 mt-4">
           <h3>Basic Details</h3>
           <div class="image_upload d-flex p-4 mt-3">
             <div class="mx-auto p-2 text-center" style="width: 250px">
-              <i class="fa-solid fa-upload text-primary"></i>
-              <p class="fw-bolder text-primary m-0">Upload image</p>
+              <i class="fa-solid fa-upload"></i>
+              <p class="fw-bolder m-0 uploadtext">Upload image</p>
               <p class="text-secondary">PNG,JPG files are allowed</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-sm-4 mb-2 mt-3">
+            <div class="col-sm-4 mt-2">
               <label for="exampleFormControlInput1" class="form-label"
                 >Salutation</label
               >
@@ -53,7 +59,7 @@
                 <option value="3">Three</option>
               </select>
             </div>
-            <div class="col-sm-4 mb-2 mt-3">
+            <div class="col-sm-4 mt-2">
               <label for="validationCustom01" class="form-label"
                 >First name</label
               >
@@ -65,7 +71,7 @@
                 required
               />
             </div>
-            <div class="col-sm-4 mb-2 mt-3">
+            <div class="col-sm-4 mt-2">
               <label for="validationCustom02" class="form-label"
                 >Last name</label
               >
@@ -79,7 +85,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6 mb-2 mt-2">
+            <div class="col-sm-6 mt-2">
               <label for="exampleInputEmail1" class="form-label">Email</label>
               <input
                 type="email"
@@ -88,30 +94,30 @@
                 aria-describedby="emailHelp"
               />
             </div>
-            <div class="col-sm-6 mb-2 mt-2">
+            <div class="col-sm-6 mt-2">
               <label for="phone no" class="form-label">Phone no</label>
               <input type="number" class="form-control" id="Inputphone no" />
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6 mb-2 mt-2">
+            <div class="col-sm-6 mt-2">
               <label for="phone no" class="form-label">Date of birth</label>
               <input type="date" class="form-control" id="date" />
             </div>
-            <div class="col-sm-6 mb-2 mt-2">
+            <div class="col-sm-6 mt-2">
               <label for="Gender" class="form-label">Gender</label>
 
-              <div class="d-flex">
+              <div class="d-flex gap-3">
                 <div class="form-check">
                   <input
                     type="radio"
                     class="form-check-input"
-                    id="radio1"
+                    id="radio2"
                     name="optradio"
                     value="option1"
                     checked
-                  />Male
-                  <label class="form-check-label" for="radio1"></label>
+                  />
+                  <label class="form-check-label" for="radio2">Male</label>
                 </div>
 
                 <div class="form-check">
@@ -122,14 +128,14 @@
                     name="optradio"
                     value="option1"
                     checked
-                  />Female
-                  <label class="form-check-label" for="radio1"></label>
+                  />
+                  <label class="form-check-label" for="radio1">Female</label>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-12 mb-2 mt-2">
+            <div class="col-lg-12 mt-2">
               <label for="phone no" class="form-label">Address</label>
               <input
                 type="text"
@@ -140,7 +146,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6 mb-2 mt-2">
+            <div class="col-sm-6 mt-2">
               <label for="exampleFormControlInput1" class="form-label"
                 >Country</label
               >
@@ -151,7 +157,7 @@
                 <option value="3">Three</option>
               </select>
             </div>
-            <div class="col-sm-6 mb-2 mt-2">
+            <div class="col-sm-6 mt-2">
               <label for="exampleFormControlInput1" class="form-label"
                 >Country</label
               >
@@ -164,19 +170,19 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-6 mb-2 mt-2">
+            <div class="col-sm-6 mt-2">
               <label for="City" class="form-label">City</label>
               <input type="text" class="form-control" id="inputtext" />
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mt-2">
               <label for="number " class="form-label">pin/zip</label>
               <input type="number" class="form-control" id="Inputnumber" />
             </div>
           </div>
         </div>
-        <div class="card p-5 mb-4 mt-4">
+        <div class="card p-4 mb-4 mt-4">
           <h3>Advanced Details</h3>
-          <div class="alert alert-warning mt-3" role="alert">
+          <div class="alert alert-warning mt-3 mb-0" role="alert">
             <h5>Sample warning messages - alert</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -185,8 +191,8 @@
               porttitor congue.
             </p>
           </div>
-          <div class="row">
-            <div class="col-lg-3 mb-2 mt-2">
+          <div class="row colorinput">
+            <div class="col-sm-3 mt-2">
               <label for="customRange" class="form-label">Height</label>
               <input
                 type="range"
@@ -195,10 +201,10 @@
                 name="points"
               />
             </div>
-            <div class="col-lg-3 pt-3 mb-2 mt-2">
+            <div class="col-sm-3 pt-3 mt-2">
               <input type="text" class="unit" id="inputtext" value="160cm" />
             </div>
-            <div class="col-lg-3 mb-2 mt-2">
+            <div class="col-sm-3 mt-2">
               <label for="customRange" class="form-label">Weight</label>
               <input
                 type="range"
@@ -207,12 +213,12 @@
                 name="points"
               />
             </div>
-            <div class="col-lg-3 pt-3 mb-2 mt-2">
+            <div class="col-sm-3 pt-3 mt-2">
               <input type="text" class="unit" id="inputtext" value="68kg" />
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-3 mb-2 mt-2">
+            <div class="col-lg-3 mt-2">
               <label for="exampleColorInput" class="form-label"
                 >Choose color</label
               >
@@ -224,7 +230,7 @@
                 title="Choose your color"
               />
             </div>
-            <div class="col-lg-8 mb-2 mt-2">
+            <div class="col-lg-8 mt-2">
               <label for="Gender" class="form-label">Choose Templates</label>
               <div class="d-flex flex-row gap-2 templates">
                 <div class="form-check col-lg-4">
@@ -255,10 +261,10 @@
                     class="form-check-input"
                     type="checkbox"
                     value=""
-                    id="flexCheckChecked"
+                    id="flexCheckCheckedone"
                     checked
                   />
-                  <label class="form-check-label" for="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckCheckedone">
                     Template3
                   </label>
                 </div>
@@ -266,13 +272,13 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-12 mb-2 mt-2">
+            <div class="col-lg-12 mt-2">
               <label for="City" class="form-label">Qualification</label>
               <input type="text" class="form-control" id="inputtext" />
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-12 mb-2 mt-2">
+            <div class="col-lg-12 mt-2">
               <label for="City" class="form-label">About yourself</label>
               <textarea
                 class="form-control"
@@ -288,10 +294,10 @@
                 class="form-check-input"
                 type="checkbox"
                 value="0"
-                id="flexCheckChecked"
+                id="flexCheckCheckedaccept"
                 checked
               />
-              <label class="form-check-label" for="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckCheckedaccept">
                 I accept term & conditions</label
               >
             </div>
