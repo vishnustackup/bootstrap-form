@@ -39,7 +39,7 @@ i {
   text-align: center;
 }
 #exampleColorInput {
-  max-width: 10rem !important;
+  max-width: 100% !important;
 }
 
 .form-control,
@@ -63,20 +63,22 @@ i {
   color: #2b3674;
   font-size: 15px;
   font-weight: 700;
+  border-radius: 16px;
 }
 .filled {
   background-color: #4318ff;
   border-radius: 16px;
   padding: 14px;
+  border: 0px solid transparent;
 }
 .footer_section {
   border-radius: 22px;
   background-color: #ffffff;
 }
-.form-check-input:checked {
+/* .form-check-input:checked {
   background-color: #4318ff;
   border: none;
-}
+} */
 .form-select,
 .form-label,
 .form-control,
@@ -96,4 +98,8 @@ label {
 }
 input[type="range"]::-webkit-slider-thumb {
   background-color: #4318ff;
+}
+input[type="radio"]:checked {
+  background-color: #4318ff;
+  border: none;
 }

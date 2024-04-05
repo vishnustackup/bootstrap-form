@@ -38,15 +38,16 @@
     <section class="layout">
       <div class="container d-flex gap-3">
         <div class="card p-4 mb-4 mt-4">
-          <h3>Basic Details</h3>
-          <div class="image_upload d-flex p-4 mt-3">
-            <div class="mx-auto p-2 text-center" style="width: 250px">
-              <i class="fa-solid fa-upload"></i>
-              <p class="fw-bolder m-0 uploadtext">Upload image</p>
-              <p class="text-secondary">PNG,JPG files are allowed</p>
+          <section class="header">
+            <h3>Basic Details</h3>
+            <div class="image_upload d-flex p-4 mt-3">
+              <div class="mx-auto p-2 text-center" style="width: 250px">
+                <i class="fa-solid fa-upload"></i>
+                <p class="fw-bolder m-0 uploadtext">Upload image</p>
+                <p class="text-secondary">PNG,JPG files are allowed</p>
+              </div>
             </div>
-          </div>
-
+          </section>
           <div class="row">
             <div class="col-sm-4 mt-2">
               <label for="exampleFormControlInput1" class="form-label"
@@ -92,11 +93,17 @@
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
+                placeholder=" enter email"
               />
             </div>
             <div class="col-sm-6 mt-2">
               <label for="phone no" class="form-label">Phone no</label>
-              <input type="number" class="form-control" id="Inputphone no" />
+              <input
+                type="number"
+                class="form-control"
+                id="Inputphone no"
+                placeholder="enter phoneno"
+              />
             </div>
           </div>
           <div class="row">
@@ -172,25 +179,38 @@
           <div class="row">
             <div class="col-sm-6 mt-2">
               <label for="City" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputtext" />
+              <input
+                type="text"
+                class="form-control"
+                id="inputtext"
+                placeholder="enter city"
+              />
             </div>
             <div class="col-sm-6 mt-2">
               <label for="number " class="form-label">pin/zip</label>
-              <input type="number" class="form-control" id="Inputnumber" />
+              <input
+                type="number"
+                class="form-control"
+                id="Inputnumber"
+                placeholder="pin/zip"
+              />
             </div>
           </div>
         </div>
         <div class="card p-4 mb-4 mt-4">
-          <h3>Advanced Details</h3>
-          <div class="alert alert-warning mt-3 mb-0" role="alert">
-            <h5>Sample warning messages - alert</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              sed fermentum felis. Aliquam erat volutpat. Donec faucibus mauris
-              vel nibh sodales feugiat. Donec suscipit felis vitae orci
-              porttitor congue.
-            </p>
-          </div>
+          <section class="header">
+            <h3>Advanced Details</h3>
+            <div class="alert alert-warning mt-3 mb-0" role="alert">
+              <h5>Sample warning messages - alert</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                sed fermentum felis. Aliquam erat volutpat. Donec faucibus
+                mauris vel nibh sodales feugiat. Donec suscipit felis vitae orci
+                porttitor congue.
+              </p>
+            </div>
+          </section>
+
           <div class="row colorinput">
             <div class="col-sm-3 mt-2">
               <label for="customRange" class="form-label">Height</label>
@@ -274,7 +294,12 @@
           <div class="row">
             <div class="col-lg-12 mt-2">
               <label for="City" class="form-label">Qualification</label>
-              <input type="text" class="form-control" id="inputtext" />
+              <input
+                type="text"
+                class="form-control"
+                id="inputtext"
+                placeholder="Qualification"
+              />
             </div>
           </div>
           <div class="row">
@@ -308,9 +333,7 @@
         <div
           class="footer_section p-3 d-grid gap-2 d-md-flex justify-content-md-end"
         >
-          <button class="btn btn-primary me-md-2 nonline" type="button">
-            Cancel
-          </button>
+          <button class="btn me-md-2 nonline" type="button">Cancel</button>
           <button class="btn btn-primary filled" type="button">
             Save Changes
           </button>
